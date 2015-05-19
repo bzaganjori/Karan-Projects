@@ -2,6 +2,7 @@ package numbers;
 
 import java.util.Scanner;
 
+/** User enters the price and amount paid for an item in the console. Returns change due. */
 public class changeReturnProgram {
 	
 	private static String calculateChange(double cost, double paid) {
