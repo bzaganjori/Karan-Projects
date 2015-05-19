@@ -12,7 +12,6 @@ public class CheckIfPalindrome {
 	
 	public static void main(String args[]) {
 		Scanner scanner = new Scanner(System.in);
-		String in, s;
 		System.out.print("Please enter a string to check if palindrome: ");
 		System.out.println(palindrome(scanner.nextLine()));
 	}
