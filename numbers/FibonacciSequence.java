@@ -3,7 +3,7 @@ package numbers;
 import java.util.Scanner;
 
 /** Returns desired n-th Fibonacci number */
-public class fibonacciSequence {
+public class FibonacciSequence {
 	
 	private static int fibSeq(int input) {
 		if (input == 0) return 0;
@@ -12,16 +12,12 @@ public class fibonacciSequence {
 		else return fibSeq(input - 1) + fibSeq(input - 2);
 	}
 	
-	public static void prompt() {
+	public static void main(String args[]) {
 		Scanner in = new Scanner(System.in);
 		int input;
 		System.out.print("Please enter a number: ");
 		input = in.nextInt();
 		System.out.println(fibSeq(input - 1));
-	}
-
-	public static void main(String args[]) {
-		prompt();
 		System.exit(1);
 	}
 }
