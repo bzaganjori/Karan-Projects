@@ -2,6 +2,7 @@ package numbers;
 
 import java.util.Scanner;
 
+/** Returns desired n-th Fibonacci number */
 public class fibonacciSequence {
 	
 	private static int fibSeq(int input) {
