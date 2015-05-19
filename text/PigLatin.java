@@ -6,23 +6,15 @@ public class PigLatin {
 
 	public static String convertString(String s) {
 		char array[];
-		int i, j;
-		String result = "", temp = "";
+		int i;
+		String result = "";
 		
 		array = s.toCharArray();
-		result = result + "-";
-		for(i = 0; i < array.length; i++) {
-			if(array[i] == 'a' || array[i] == 'e' || array[i] == 'i' || array[i] == 'o' || array[i] == 'u') {
-				for(j = i; j < array.length; j++) {
-					temp += array[j];
-				}
-				result = temp + result;
-				break;
-			} else {
-				result += array[i];
-			}
+		if(array[0] == 'a' || array[0] == 'e' || array[0] == 'i' || array[0] == 'o' || array[0] == 'u') {
+			return s;
 		}
-		result += "ay";
+		for(i = 1; i < array.length; i++) result += array[i];
+		result += "-" + array[0] + "ay";
 		return result;
 	}
 	
