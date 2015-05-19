@@ -2,6 +2,7 @@ package numbers;
 
 import java.util.Scanner;
 
+/** Returns all numbers that are prime factors of users desired console input */
 public class primeFactorization {
 	
 	private static int isPrime(int n) {
